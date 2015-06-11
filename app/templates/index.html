@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+<div class="navbar navbar-default">
+</div>
+
+<div id="main">
+<h2>{{message}}</h2>
+
+<form method="POST" action="/api" enctype="multipart/form-data">
+<input type="file" name="check_img">
+<input type="submit" value="判定する">
+</form>
+</div>
+</div>
+
+{% endblock %}
