@@ -13,7 +13,7 @@ from flask import Flask,render_template,request,redirect,url_for
 app = Flask(__name__)
 
 
-head_path='/home/ubuntu/spiritual/caffe/examples/cifar10/'
+head_path='./cifar10/'
 
 def spiritual_filter(check_data):
 	mean_blob = caffe_pb2.BlobProto()
